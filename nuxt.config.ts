@@ -137,5 +137,8 @@ export default defineNuxtConfig({
         'lucide-vue-next',
       ]
     }
+  },
+  nitro: {
+    preset: 'netlify'
   }
 })
