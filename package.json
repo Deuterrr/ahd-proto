@@ -2,6 +2,7 @@
   "name": "ahd-portfolio",
   "type": "module",
   "private": true,
+  "packageManager": "bun@1.3.12",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
