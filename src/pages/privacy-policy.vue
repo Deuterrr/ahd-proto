@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useRuntimeConfig } from '#app'
 import { useSiteNavigation } from '~/composables/useSiteNavigation'
-import { locales } from './_privacy-policy.locales'
+import { locales } from '~/locales/privacy-policy'
 import PolicyLayout from '~/components/PolicyLayout.vue'
 
 const { currentLang } = useSiteNavigation()

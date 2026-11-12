@@ -1,36 +1,45 @@
+// Localized contact page inquiries and institutional communication content.
 export type ContactPageContent = {
+  seo: {
+    title: string
+    description: string
+  }
   header: {
-    title: string;
-    description: string;
-  };
+    title: string
+    description: string
+  }
   info: {
     contact: {
-      label: string;
-      value: string;
-    };
+      label: string
+      value: string
+    }
     timeAndPlace: {
-      label: string;
-      value: string;
-    };
+      label: string
+      value: string
+    }
     socialMedia: {
-      label: string;
-    };
-  };
+      label: string
+    }
+  }
   form: {
-    title: string;
+    title: string
     fields: {
-      name: string;
-      institution: string;
-      email: string;
-      phone: string;
-      subject: string;
-      message: string;
-    };
-    submit: string;
-  };
+      name: string
+      institution: string
+      email: string
+      phone: string
+      subject: string
+      message: string
+    }
+    submit: string
+  }
 }
 
 export const en: ContactPageContent = {
+  seo: {
+    title: "Contact Us | AHD Husada Dharma",
+    description: "Contact the AHD team for product information, distribution partnerships, or customer support. We're ready to assist with your animal health needs."
+  },
   header: {
     title: "Let's Connect",
     description: "We are ready to help answer your questions and needs. Please don't hesitate to contact us through the available channels."
@@ -63,6 +72,10 @@ export const en: ContactPageContent = {
 }
 
 export const id: ContactPageContent = {
+  seo: {
+    title: "Hubungi Kami | AHD Husada Dharma",
+    description: "Hubungi tim AHD untuk informasi produk, kerjasama distribusi, atau layanan pelanggan. Kami siap membantu kebutuhan kesehatan hewan Anda."
+  },
   header: {
     title: "Mari Terhubung",
     description: "Kami siap membantu menjawab pertanyaan dan kebutuhan Anda. Jangan ragu untuk menghubungi kami melalui kontak yang tersedia."

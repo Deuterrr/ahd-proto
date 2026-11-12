@@ -1,20 +1,21 @@
+// Localized veterinary product specification and composition labels.
 export type ProductDetailContent = {
   error: {
-    notFound: string;
-  };
+    notFound: string
+  }
   body: {
-    description: string;
-    tags: string;
-    specification: string;
-    ingredients: string;
-    dose: string;
-    shape: string;
-    packaging: string;
-    benefit: string;
-  };
+    description: string
+    tags: string
+    specification: string
+    ingredients: string
+    dose: string
+    shape: string
+    packaging: string
+    benefit: string
+  }
 }
 
-const en: ProductDetailContent = {
+export const en: ProductDetailContent = {
   error: {
     notFound: "Product not found",
   },
@@ -30,7 +31,7 @@ const en: ProductDetailContent = {
   },
 }
 
-const id: ProductDetailContent = {
+export const id: ProductDetailContent = {
   error: {
     notFound: "Produk tidak ditemukan",
   },

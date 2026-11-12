@@ -1,26 +1,35 @@
 import { useRoute } from 'vue-router'
 import { seoData } from '~/data/seo'
+import { useSiteNavigation } from '~/composables/useSiteNavigation'
 
+// Coordinates localized page SEO metadata and multilingual document attributes.
 export function useAppSeo() {
   const route = useRoute()
+  const { currentLang } = useSiteNavigation()
 
-  // Use a computed wrapper so that whenever the route changes,
-  // the meta tags update automatically
+  useHead({
+    htmlAttrs: {
+      lang: () => currentLang.value
+    }
+  })
+
   useSeoMeta({
     title: () => {
       const routeName = String(route.name)
-      if (seoData[routeName]?.title) {
-        return seoData[routeName].title
-      }
-
-      return null
+      return seoData[routeName]?.title ?? null
     },
     description: () => {
       const routeName = String(route.name)
-      if (seoData[routeName]?.description) {
-        return seoData[routeName].description
-      }
-      return null
-    }
+      return seoData[routeName]?.description ?? null
+    },
+    ogTitle: () => {
+      const routeName = String(route.name)
+      return seoData[routeName]?.title ?? null
+    },
+    ogDescription: () => {
+      const routeName = String(route.name)
+      return seoData[routeName]?.description ?? null
+    },
+    ogLocale: () => currentLang.value === 'id' ? 'id_ID' : 'en_US'
   })
 }

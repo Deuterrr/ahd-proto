@@ -1,5 +1,5 @@
-import type { PolicyPageContent } from '../types/policy';
-import { policyContactsEn, policyContactsId } from '../data/policyContact';
+import type { PolicyPageContent } from '~/types/policy'
+import { policyContactsEn, policyContactsId } from '~/data/policyContact'
 
 export const en: PolicyPageContent = {
   title: "Terms & Conditions",
@@ -22,7 +22,7 @@ export const en: PolicyPageContent = {
       ]
     },
   ]
-};
+}
 
 export const id: PolicyPageContent = {
   title: "Syarat & Ketentuan",
@@ -45,6 +45,6 @@ export const id: PolicyPageContent = {
       ]
     },
   ]
-};
+}
 
-export const locales = { en, id };
+export const locales = { en, id }

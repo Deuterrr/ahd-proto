@@ -52,6 +52,14 @@ export const seoData: Record<string, { title: string, description: string }> = {
     title: 'Hubungi Kami | AHD Husada Dharma',
     description: 'Hubungi tim AHD untuk informasi produk, kerjasama distribusi, atau layanan pelanggan. Kami siap membantu kebutuhan kesehatan hewan Anda.'
   },
+  'privacy-policy-id': {
+    title: 'Kebijakan Privasi | AHD',
+    description: 'Pelajari bagaimana AHD mengumpulkan, menggunakan, dan melindungi informasi pribadi melalui situs web dan layanan digital kami.'
+  },
+  'terms-and-conditions-id': {
+    title: 'Syarat & Ketentuan | AHD',
+    description: 'Baca Syarat & Ketentuan AHD mengenai penggunaan situs web, hak kekayaan intelektual, batasan, dan tanggung jawab pengguna.'
+  },
 
   // --- ENGLISH ---
   'index-en': {
@@ -105,5 +113,13 @@ export const seoData: Record<string, { title: string, description: string }> = {
   'contact-en': {
     title: 'Contact Us | AHD Husada Dharma',
     description: 'Contact the AHD team for product information, distribution partnerships, or customer support. We\'re ready to assist with your animal health needs.'
+  },
+  'privacy-policy-en': {
+    title: 'Privacy Policy | AHD',
+    description: 'Learn how AHD collects, uses, and protects personal information through our website and digital services.'
+  },
+  'terms-and-conditions-en': {
+    title: 'Terms and Conditions | AHD',
+    description: 'Read AHD’s Terms & Conditions regarding website usage, intellectual property, limitations, and user responsibilities.'
   }
 }

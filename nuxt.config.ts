@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   srcDir: 'src/',
+  ignore: ['**/*.locales.ts', '**/_locales.ts'],
   css: ['~/assets/main.css'],
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
       const newPages: typeof pages = []
       
       for (const page of pages) {
-        if (!page.name) continue
+        if (!page.name || !page.file?.endsWith('.vue')) continue
         
         const categorySegments = {
           'poultry': { id: 'unggas', en: 'poultry' },

@@ -1,25 +1,27 @@
+// Animal category navigation card content.
 export type ProductCategoryContent = {
-  id: number;
-  slug: string;
-  title: string;
-  description: string;
-  tags: string[];
-  image: string;
-};
+  id: number
+  slug: string
+  title: string
+  description: string
+  tags: string[]
+  image: string
+}
 
+// Localized content for the animal health division homepage.
 export type IndexPageContent = {
   hero: {
-    title: string;
-    description: string;
-    button: string;
-  };
+    title: string
+    description: string
+    button: string
+  }
   partOf: {
-    text: string;
-    company: string;
-  };
+    text: string
+    company: string
+  }
   categories: {
-    button: string;
-    content: ProductCategoryContent[];
+    button: string
+    content: ProductCategoryContent[]
   }
 }
 

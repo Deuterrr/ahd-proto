@@ -1,43 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
-
-type errorContent = {
-  notFound: {
-    title: string;
-    message: string;
-  };
-  internalErr: {
-    title: string;
-    message: string;
-  }
-  button: string;
-}
-
-const id: errorContent = {
-  notFound: {
-    title: "Halaman Tidak Ditemukan",
-    message: "Maaf, halaman yang Anda coba akses tidak dapat ditemukan.",
-  },
-  internalErr: {
-    title: "Terjadi Kesalahan",
-    message: "string",
-  },
-  button: "Kembali ke Beranda"
-}
-
-const en: errorContent = {
-  notFound: {
-    title: "Page Not Found",
-    message: "Sorry, the page you are trying to access cannot be found.",
-  },
-  internalErr: {
-    title: "Something Went Wrong",
-    message: "Sorry, there was an error in our system.",
-  },
-  button: "Back to Home"
-}
-
-const locales = { id, en }
+import { locales } from '~/locales/error'
 
 const { currentLang } = useSiteNavigation()
 const content = computed(() => locales[currentLang.value])

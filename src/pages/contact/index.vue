@@ -2,14 +2,14 @@
 import { computed } from 'vue'
 import { socialMediaLinks } from '../../constants/routes'
 import { useSiteNavigation } from '../../composables/useSiteNavigation'
-import { locales } from './_locales'
+import { locales } from '~/locales/contact'
 
 const { currentLang } = useSiteNavigation()
 const content = computed(() => locales[currentLang.value])
 
 useSeoMeta({
-  title: computed(() => currentLang.value === 'id' ? 'Kontak Kami | Kalbe Animal Health' : 'Contact Us | Kalbe Animal Health'),
-  description: computed(() => currentLang.value === 'id' ? 'Hubungi kami untuk pertanyaan, informasi produk, dan kemitraan.' : 'Contact us for inquiries, product information, and partnerships.')
+  title: () => content.value.seo.title,
+  description: () => content.value.seo.description
 })
 </script>
 
