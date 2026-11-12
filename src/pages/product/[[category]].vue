@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { getProductCategoryBySegment } from '../../data/productCategories'
 import { useSiteNavigation } from '../../composables/useSiteNavigation'
-import { locales } from './_locales'
+import { locales } from '~/locales/product'
 
 const route = useRoute()
 const { products: allProducts, getProductsByCategorySegment } = useProductCatalog()

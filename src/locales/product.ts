@@ -1,18 +1,19 @@
+// Localized product catalog search, category headers, and error messages.
 export type ProductPageContent = {
   error: {
-    notFound: string;
-  };
+    notFound: string
+  }
   header: {
-    title: string;
-    description: string;
-  };
+    title: string
+    description: string
+  }
   search: {
-    placeholder: string;
-    category: string;
-  };
+    placeholder: string
+    category: string
+  }
   list: {
-    productCount: string; // "produk" / "products"
-  };
+    productCount: string
+  }
 }
 
 export const en: ProductPageContent = {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getProductCategoryBySegment } from '../../../data/productCategories'
 import { useSiteNavigation } from '../../../composables/useSiteNavigation'
-import { locales } from './_locales'
+import { locales } from '~/locales/product-detail'
 
 const route = useRoute()
 const { getProductByCategoryAndSlug } = useProductCatalog()

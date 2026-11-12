@@ -6,7 +6,7 @@ import {
   ref,
 } from 'vue'
 import { useSiteNavigation } from '~/composables/useSiteNavigation'
-import { locales } from './_index.locales'
+import { locales } from '~/locales/home'
 
 const { currentLang, appRoutes } = useSiteNavigation()
 
